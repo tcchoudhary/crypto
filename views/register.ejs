@@ -1,0 +1,47 @@
+<%- include('partials/header'); -%>
+    <div class="reg modal" id="reg">
+        <form method="post" action="/register" class="regform">
+            <div class="container">
+                <div class="center-div">
+                    <div class="google">
+                        <h3>Sign Up</h3>
+                        <div class="ggl">
+                            <a href="/auth/google" class=" btn-b" type="button"><img class="g-img"
+                                    src="/img/google.png">
+                                <h6>Login
+                                    with Google</h6>
+                            </a>
+                        </div>
+                        <div class="fb">
+                            <a href="/auth/github" class=" btn-b" type="button"><i class="fab fa-github"></i>
+                                <h6>Login
+                                    with
+                                    Github</h6>
+                            </a>
+                        </div>
+                        <div class="twtr">
+                            <a href="/twitter" class=" btn-b" type="button"><i class="fab fa-twitter"></i>
+                                <h6>Login with Twitter</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="or">
+                        <hr class="brdr-m" data-content="Or">
+                    </div>
+
+                    <input type="text" placeholder="Email" name="usermail" id="email" required>
+                    <input type="text" placeholder="Name" name="username" id="name" required>
+                    <input type="password" placeholder="Password" name="password" id="psw" required>
+                    <input type="password" placeholder="confirm Password" name="cpassword" id="psw-repeat" required>
+                    <!-- <span class="hidden" id="hidden">hello</span> -->
+                    <input type="checkbox" name="" id="">
+                    <span>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</span>
+                    <button type="submit" class="registerbtn">Register</button>
+                </div>
+            </div>
+            <div class="container signin">
+                <p>Already have an account? <a href="/login">Sign in</a>.</p>
+            </div>
+        </form>
+    </div>
+    <%- include('partials/footer'); -%>

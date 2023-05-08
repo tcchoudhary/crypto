@@ -1,0 +1,44 @@
+<%- include('partials/header'); -%>
+
+    <div class="user_flex">
+        <div id="user-profile-content">
+            <div class="user-profile-section">
+                <img src="<%=user.pic%>" alt="" class="profilepic">
+            </div>
+            <div class="profile-value user-profile-value-username"
+                style="font-size:16px;font-weight:500;padding-bottom:2px">
+                <%=user.email%>
+            </div>
+            <div class="profile-value user-profile-value-email" style="font-size:16px;font-weight:400">
+                <%=user.username%>
+            </div>
+            <div class="profile-value user-profile-value-email" style="font-size:16px;font-weight:400">
+
+            </div>
+        </div>
+
+
+        <div class="user-profile-list-section">
+            <div class="user-profile-list-items">
+                <div class="user-profile-list-item one">
+                    <div class="upl-list-item-logo"><i class="fas fa-id-card"></i></div>
+                    <div class="upl-list-item-content"><a href="https://www.google.com"
+                            class="upl-list-item-link">Profile</a></div>
+                </div>
+                <div class="user-profile-list-item two">
+                    <div class="upl-list-item-logo"><i class="fas fa-upload"></i></div>
+                    <div class="upl-list-item-content"><a href="" class="upl-list-item-link">Uploads</a></div>
+                </div>
+                <div class="user-profile-list-item three">
+                    <div class="upl-list-item-logo">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                    <div class="upl-list-item-content">
+                        <a class="dropdown-item" href="/logout">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/footer'); -%>

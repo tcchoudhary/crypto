@@ -1,0 +1,46 @@
+<%- include('partials/header'); -%>
+    <div id="id01" class="modal">
+        <div class="container">
+            <div class="center-div">
+                <form action="/login" method="post">
+                    <div class="google">
+                        <div class="ggl">
+                            <a href="/auth/google" class=" btn-b" type="button"><img class="g-img"
+                                    src="/img/google.png">
+                                <h6>Login
+                                    with Google</h6>
+                            </a>
+                        </div>
+                        <div class="fb">
+                            <a href="/auth/github" class=" btn-b" type="button"><i class="fab fa-github"></i>
+                                <h6>Login
+                                    with
+                                    github</h6>
+                            </a>
+                        </div>
+                        <div class="twtr">
+                            <a href="/twitter" class=" btn-b" type="button"><i class="fab fa-twitter"></i>
+                                <h6>Login with Twitter</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="or">
+                        <hr class="brdr-m" data-content="Or">
+                    </div>
+                    <input type="text" placeholder="Email" name="usermail" required>
+                    <input type="password" placeholder="Password" name="password1" required>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                    <button type="submit">
+                        <h6>Login</h6>
+                    </button>
+                    <div class="forgot">
+                        <span class="psw"> <a href="#">Forgot password?</a></span>
+                    </div>
+                    <div class="eg">
+                        <span>Don't have an account? <a href="/register">Register</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <%- include('partials/footer'); -%>

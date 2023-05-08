@@ -1,0 +1,50 @@
+<%- include('partials/header'); -%>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="form-flex">
+                <div class="form-main">
+                    <h1 data-aos="flip-left">Cotact With Us</h1>
+                    <p data-aos="flip-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sunt
+                        ratione deleniti quo.</p>
+                    <form action="/contact" method="post">
+                        <div class="form">
+                            <div class="form-item">
+                                <label for="name">
+                                    <input type="text" name="name" placeholder="name" required>
+                                </label>
+                            </div>
+                            <div class="form-item">
+                                <label for="email">
+                                    <input type="email" name="email" placeholder="email" required>
+                                </label>
+                            </div>
+                            <div class="form-item">
+                                <label for="phone">
+                                    <input type="tel" name="phone" placeholder="phone" required>
+                                </label>
+                            </div>
+                            <div class="form-item">
+                                <label for="subject">
+                                    <input type="text" name="subject" placeholder="subject" required>
+                                </label>
+                            </div>
+                            <div class="form-item textarea">
+                                <textarea name="massege" id="masssege" cols="30" rows="10"
+                                    placeholder="massege"></textarea>
+                            </div>
+                            <button class="btn bttn" type="submit">send masssege</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="map">
+                    <div class="map-p">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56208.277587952995!2d74.93177799860615!3d28.297798582867077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39136200b18a66a3%3A0x3e487bf6934c8306!2sChuru%2C%20Rajasthan%20331001!5e0!3m2!1sen!2sin!4v1664883139889!5m2!1sen!2sin"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%- include('partials/footer'); -%>
